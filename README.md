@@ -1,6 +1,8 @@
 # notes_app
 
 A new Flutter project.
+Developed a notes app with dynamic theming, customized UI elements, and efficient state management
+using Cubit. Integrated Hive for data storage and implemented features for note managemen
 
 ## Getting Started
 
