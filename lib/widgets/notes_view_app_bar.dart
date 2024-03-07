@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:notes_app/widgets/notes_app_bar_icon.dart';
 
 class NotesViewAppBar extends StatelessWidget {
-  const NotesViewAppBar({super.key, required this.title, required this.icon});
+  const NotesViewAppBar({super.key, required this.title, required this.icon, this.onPressed});
   final String title;
   final IconData icon;
+  final void Function()? onPressed;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -24,6 +25,7 @@ class NotesViewAppBar extends StatelessWidget {
           ),
           const Spacer(),
           NotesAppBarIcon(
+            onPressed: onPressed,
             icon: icon,
           ),
         ],

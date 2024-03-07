@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 class NotesAppBarIcon extends StatelessWidget {
-  const NotesAppBarIcon({super.key, required this.icon});
+  const NotesAppBarIcon({super.key, required this.icon, this.onPressed});
   final IconData icon;
+  final void Function()? onPressed;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -17,7 +18,7 @@ class NotesAppBarIcon extends StatelessWidget {
         ),
       ),
       child: IconButton(
-        onPressed: () {},
+        onPressed: onPressed,
         icon: Icon(
           icon,
           size: 28,

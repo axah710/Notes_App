@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:notes_app/cubits/notes_cubit/notes_cubit.dart';
+import 'package:notes_app/models/note_model.dart';
 import 'package:notes_app/views/edit_notes_view.dart';
 
 class NotesItem extends StatelessWidget {
-  const NotesItem({super.key});
-
+  const NotesItem({super.key, required this.note});
+  final NoteModel note;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -11,7 +14,9 @@ class NotesItem extends StatelessWidget {
         context,
         MaterialPageRoute(
           builder: (context) {
-            return const EditNotesView();
+            return EditNotesView(
+              note: note,
+            );
           },
         ),
       ),
@@ -23,7 +28,7 @@ class NotesItem extends StatelessWidget {
           borderRadius: BorderRadius.circular(
             20,
           ),
-          color: const Color(0xffFFCC80),
+          color: Color(note.color),
         ),
         child: Padding(
           padding: const EdgeInsets.only(
@@ -36,13 +41,13 @@ class NotesItem extends StatelessWidget {
             children: [
               ListTile(
                 contentPadding: EdgeInsetsDirectional.zero,
-                title: const Padding(
-                  padding: EdgeInsets.only(
+                title: Padding(
+                  padding: const EdgeInsets.only(
                     bottom: 20,
                   ),
                   child: Text(
-                    "Flutter Notes",
-                    style: TextStyle(
+                    note.title,
+                    style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 24,
                       color: Colors.black,
@@ -54,7 +59,7 @@ class NotesItem extends StatelessWidget {
                     bottom: 20,
                   ),
                   child: Text(
-                    "This Is A Flutter Tips Notes This Is A Flutter Tips Notes ...",
+                    note.content,
                     style: TextStyle(
                       fontSize: 18,
                       color: Colors.black.withOpacity(
@@ -64,7 +69,10 @@ class NotesItem extends StatelessWidget {
                   ),
                 ),
                 trailing: IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    note.delete();
+                    BlocProvider.of<NotesCubit>(context).fetchAllNotes();
+                  },
                   icon: const Icon(
                     Icons.delete,
                     color: Colors.black,
@@ -72,13 +80,13 @@ class NotesItem extends StatelessWidget {
                   ),
                 ),
               ),
-              const Padding(
-                padding: EdgeInsets.only(
+              Padding(
+                padding: const EdgeInsets.only(
                   right: 12,
                 ),
                 child: Text(
-                  "2/21/24 2:30",
-                  style: TextStyle(
+                  note.date,
+                  style: const TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.bold,
                   ),
