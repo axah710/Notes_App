@@ -4,12 +4,8 @@ Welcome to **Notes App**, a comprehensive note-taking app built to enhance produ
 
 ## 🌟 Features
 
-- **Custom App Bar**: Tailor your app's navigation bar to fit your needs.
-- **Custom Note Item**: Personalize how each note is displayed.
 - **Notes List View**: Seamlessly browse through your notes.
 - **Floating Action Button**: Quickly add new notes with a single tap.
-- **Modal Bottom Sheet**: Display additional options with a smooth modal.
-- **Custom Text Field**: Enhance your note-taking experience with a unique text field.
 - **Edit Notes**: Modify existing notes with ease.
 - **Hive Integration**: Efficient data storage using Hive.
 - **Cubit State Management**: Robust state management with Cubit.
@@ -44,7 +40,7 @@ Here's a quick guide on how to use the app:
 
 1. **Add a Note**: Tap the floating action button to add a new note.
 2. **Edit a Note**: Select a note and use the edit option to modify it.
-3. **Delete a Note**: Swipe left on a note to delete it.
+3. **Delete a Note**: Click on delete button on a note to delete it.
 4. **Customize Note Colors**: Choose different colors for your notes for better organization.
 
 ## 🏢 Business Cases and Impact
