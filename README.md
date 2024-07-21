@@ -51,13 +51,13 @@ Here's a quick guide on how to use the app:
 
 ### 📈 Business Cases
 
-- **Enhanced Productivity**: Takamul simplifies note-taking, allowing users to capture and organize thoughts quickly and efficiently.
+- **Enhanced Productivity**: My App simplifies note-taking, allowing users to capture and organize thoughts quickly and efficiently.
 - **Improved Organization**: With features like custom note colors and a clean notes list view, users can easily manage and find their notes.
 - **User-Friendly Interface**: The intuitive design and smooth user experience encourage regular use, enhancing productivity and creativity.
 
 ### 🌍 Impact
 
-- **Increased Efficiency**: By streamlining the note-taking process, Takamul helps users stay organized and focused, reducing time spent searching for notes.
+- **Increased Efficiency**: By streamlining the note-taking process, My App helps users stay organized and focused, reducing time spent searching for notes.
 - **Accessibility and Convenience**: The app’s mobile nature ensures that users can take notes anytime, anywhere, enhancing their ability to capture ideas on the go.
 - **Data Integrity and Security**: Utilizing Hive for data storage ensures that notes are stored efficiently and securely, providing peace of mind to users.
 
@@ -81,8 +81,8 @@ We welcome contributions from the community! To contribute:
     ```
 6. **Open a pull request**.
 
-Please make sure your code follows our coding guidelines and is well-documented.
+Please make sure your code follows my coding guidelines and is well-documented.
 
-We hope you enjoy using Takamul! If you have any questions or feedback, please don't hesitate to reach out.
+We hope you enjoy using My App! If you have any questions or feedback, please don't hesitate to reach out.
 
 Happy Note-Taking! ✨
